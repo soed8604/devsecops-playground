@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: Calico: BIRD no encuentra archivos de configuración
+title: "Calico: BIRD no encuentra archivos de configuración"
 ---
 
 # Problema: Calico/BIRD no encuentra config

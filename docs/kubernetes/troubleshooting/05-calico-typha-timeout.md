@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: Calico: Fallo al conectar a Typha (Timeout 5473)
+title: "Calico: Fallo al conectar a Typha (Timeout 5473)"
 ---
 
 # Problema: Calico Node no puede conectar a Typha

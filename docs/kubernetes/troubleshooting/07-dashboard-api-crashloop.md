@@ -28,10 +28,10 @@ En nuestro caso, el pod del Dashboard API estaba corriendo en `k8s-worker-X`, y 
 Resolver los problemas subyacentes que impiden que el agente de red de Calico (`calico-node`) pase a estado `READY` en el nodo donde corre el pod del Dashboard API.
 
 Las causas comunes de que `calico-node` no esté Ready (0/1) se documentan en detalle en otras secciones de Troubleshooting:
-- Enlace a la sección: Calico Node Pod en 0/1 Ready (Overview)
-- Enlace a la sección: Calico: BIRD no encuentra archivos de configuración (Problemas de generación de config/confd)
-- Enlace a la sección: Calico: Fallo al conectar a Typha (Timeout 5473) (Problemas de conexión a Typha)
-- Enlace a la sección: Calico: BGP Peering No Establecido (Puerto 179) (Problemas con puerto 179 y BGP)
+* [Overview del Problema Calico 0/1 Ready](/docs/kubernetes/troubleshooting/03-calico-node-notready-overview)
+* [Calico: BIRD no encuentra archivos de configuración](/docs/kubernetes/troubleshooting/04-calico-missing-bird-config)
+* [Calico: Fallo al conectar a Typha (Timeout 5473)](/docs/kubernetes/troubleshooting/05-calico-typha-timeout)
+* [Calico: BGP Peering No Establecido (Puerto 179)](/docs/kubernetes/troubleshooting/06-calico-bgp-not-established)
 
 Una vez que hayas solucionado el problema específico que impedía a `calico-node` estar `READY` en el nodo worker (probablemente un problema de firewall con el puerto 179 o 5473, o un problema con el pod Typha), la red en ese nodo se corregirá, el pod `kubernetes-dashboard-api` podrá conectar al API Server a través de su ClusterIP, y pasará a estado `Running` (1/1 Ready).
 

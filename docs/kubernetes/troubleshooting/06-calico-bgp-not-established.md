@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: Calico: BGP Peering No Establecido (Puerto 179)
+title: "Calico: BGP Peering No Establecido (Puerto 179)"
 ---
 
 # Problema: Calico/BIRD no establece BGP Peering
